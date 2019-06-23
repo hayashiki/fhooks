@@ -4608,7 +4608,7 @@ find-up@^2.0.0, find-up@^2.1.0:
   dependencies:
     locate-path "^2.0.0"
 
-firebase@6.2.2:
+firebase@6.2.2, firebase@^6.2.2:
   version "6.2.2"
   resolved "https://registry.yarnpkg.com/firebase/-/firebase-6.2.2.tgz#b97dba848ec39fc12e0d8b46a533542960c12c89"
   integrity sha512-ZZpqTWEJyErWROOIWtH4dwsPhSAWDGmfmQhCm93AuynWdVQsCs/lxyLAA+5WuJqdFThjl9ctHW68ghFcn5gJBQ==
