@@ -32,5 +32,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@firebase/app-types": "^0.4.0",
+    "@firebase/testing": "^0.11.2"
   }
 }
