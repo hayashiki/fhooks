@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import firebase from "firebase/app";
+import "firebase/auth";
 import './App.css';
 
 const App = ({
@@ -8,6 +9,13 @@ const App = ({
 }:{
   firebaseApp: firebase.app.App;
 }) => {
+
+  useEffect(() => {
+    firebaseApp.auth().onAuthStateChanged((user: any) => {
+      console.log(user)
+    })
+  })
+
   return (
     <div className="App">
       <header className="App-header">
