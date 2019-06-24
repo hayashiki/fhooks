@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { createBrowserHistory } from "history";
 import App from './App';
 import { initializeFirebase } from "./firebase";
 import * as serviceWorker from './serviceWorker';
 
+const history = createBrowserHistory();
 
 const firebaseApp = initializeFirebase({
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -18,7 +20,8 @@ const firebaseApp = initializeFirebase({
 
 console.log(process.env.REACT_FIREBASE_API_KEY)
 
-ReactDOM.render(<App firebaseApp={firebaseApp} />, document.getElementById('root'));
+ReactDOM.render(<App firebaseApp={firebaseApp} history={history}/>,
+   document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
